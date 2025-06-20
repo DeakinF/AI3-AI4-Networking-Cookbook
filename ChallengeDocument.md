@@ -20,5 +20,5 @@ to immerse the user in an example of **real-life web service vulnerability explo
 
 ## The challenge begins at:
 
-**[Securum.com](http://Securum.com)**  
+**https://<ip address of server>/index.html**  
 **Good Luck!**
