@@ -1,4 +1,4 @@
-###TUTORIAL
+
 
 # An Overview of the Exploits used and information Users’ should know before attempting the challenge
 
