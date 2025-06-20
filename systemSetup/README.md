@@ -11,6 +11,7 @@ This document describes how to set up a system for the challenge
 7. Place html and cgi scripts on server
 9. Place secret maker script on server
 10. Make an insecure bash shell
+11. Restart Apache server
 
 
 # Download a Fedora Workstation VM image
@@ -45,20 +46,8 @@ Copy a bash executable and make it setuid and owned by root
 chmod u+s /bin/bash-insecure
 chown root:root /bin/bash-insecure
 ```
-# Configure Apache Web Server to Insert Custom Headers
-Apache allows you to insert custom headers into HTTP responses using the `Header` directive provided by the `mod_headers` module. 
 
-## Prerequisites
-1. Ensure Apache is installed and running on your server.
-2. Verify that the `mod_headers` module is enabled:
-    ```a2enmod headers
-       systemctl restart apache2
-    ```
-
-## Edit the Apache Configuration File
-Edit /etc/httpd.conf and add the following lines in
-
-## Restart the Apache server
+# Restart the Apache server
     ```
     systemctl restart apache2
     ```
