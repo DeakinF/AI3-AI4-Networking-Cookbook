@@ -49,7 +49,10 @@ openssl req -newkey rsa:2048 -nodes -keyout /etc/tls/pki/private/apacheserverpri
 echo "Configuring Apache to use the SSL certificate..."
 cat <<EOF > /etc/httpd/conf.d/ssl.conf
 <VirtualHost *:443>
-    ServerName localhost
+    ServerName securum.com
+    Header Set X-FileRetrieveEndpoint "/cgi-bin/do.cgi"
+    Header Set X-CompanyURLCompliance "Strict/XML"
+    Header Set X-uriACL "Not For Bob"
     DocumentRoot "/var/www/html"
     SSLEngine on
     SSLCertificateFile /etc/tls/pki/apacheservercert.pem
