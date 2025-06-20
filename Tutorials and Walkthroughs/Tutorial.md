@@ -14,5 +14,6 @@ HTTP headers are key-value pairs, sent in HTTP requests and responses, which oft
 ## Public and Private key encryption
 Public and private key encryption, also known as asymmetric encryption, uses two mathematically linked keys. The public key is openly shared and used to encrypt data, whilst the private key is kept hidden and used to decrypt public keys. This ensures that only the intended recipient who holds the private key, can read the message. It is the backbone of secure communication protocols such as HTTPS, email encryption and digital signatures. Unlike symmetric encryption, which shares one key, asymmetric encryption improves security by removing the need to exchange private keys of potentially unsafe networks. If something is encrypted in a private key, the information is vulnerable, as anyone is able to encrypt the data with the available public key.
 
-## Guidance for solving / Walkthrough:
+## Guidance for solving / Walkthrough: https://www.youtube.com/watch?v=IDs0xbK1N4k
+
 
